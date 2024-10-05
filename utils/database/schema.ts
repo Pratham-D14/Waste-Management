@@ -62,7 +62,7 @@ export const CollectedWaste = pgTable("collected_waste", {
 });
 
 // Notifications Schema
-export const notifications = pgTable("notifications", {
+export const Notifications = pgTable("notifications", {
   id: serial("id").primaryKey(),
   userId: integer("user_id")
     .references(() => Users.id)
